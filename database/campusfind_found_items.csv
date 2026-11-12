@@ -1,0 +1,21 @@
+reference_code,item_name,category,color,found_location,found_date,description,status
+CF-1042,Earbuds case,Electronics,Black,Library,11/10/2026,Found near the library entrance.,available
+CF-1043,Water bottle,Personal item,Blue,Cafeteria,11/9/2026,Left on a table near the counter.,returned
+CF-1044,Umbrella,Personal item,Black,Main entrance,11/8/2026,Found beside the umbrella stand.,available
+CF-1045,USB drive,Electronics,Silver,Computer lab,11/7/2026,Found next to a keyboard.,available
+CF-1046,Earbuds case,Electronics,White,Library,11/9/2026,Found on a second-floor study desk.,available
+CF-1047,Earbuds case,Electronics,Black,Cafeteria,11/10/2026,Found under a cafeteria chair.,available
+CF-1048,Notebook,Stationery,Black,Library,11/10/2026,Found near the book return desk.,available
+CF-1049,Charger,Electronics,White,Lecture hall A,11/6/2026,Found near a wall socket.,returned
+CF-1050,Pencil case,Stationery,Pink,Lecture hall A,11/6/2026,Found on a seat in the front row.,available
+CF-1051,Water bottle,Personal item,Blue,Sports ground,11/5/2026,Found on a bench beside the field.,available
+CF-1052,Cap,Clothing,Red,Sports ground,11/5/2026,Found near the spectator area.,available
+CF-1053,Hoodie,Clothing,Grey,Student lounge,11/4/2026,Left on a sofa.,returned
+CF-1054,Calculator,Electronics,Black,Lecture hall B,11/4/2026,Found on a desk in the back row.,available
+CF-1055,Lunch box,Personal item,Green,Cafeteria,11/3/2026,,available
+CF-1056,Mouse,Electronics,Black,Computer lab,11/3/2026,Found beside a monitor.,returned
+CF-1057,Tote bag,Bags,Beige,Library,11/2/2026,Found beside a study carrel.,available
+CF-1058,Backpack,Bags,Navy,Student lounge,11/2/2026,Found near the lounge entrance.,available
+CF-1059,Umbrella,Personal item,Black,Library,11/1/2026,Found near the library entrance.,returned
+CF-1060,Notebook,Stationery,Yellow,Lecture hall B,11/1/2026,,available
+CF-1061,Key ring,Accessories,Silver,Main entrance,10/31/2026,Found near the entrance bench.,available
