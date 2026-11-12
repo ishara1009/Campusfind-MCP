@@ -4,13 +4,21 @@ CampusFind is a local full-stack campus lost-and-found demo. Students can search
 
 ## Application screenshots
 
-| Find an item | Search results |
-| --- | --- |
-| ![CampusFind natural-language item search](./images/1.png) | ![CampusFind matching found-item reports](./images/4.png) |
+### Find an item
 
-| Report a found item | Check report status |
-| --- | --- |
-| ![CampusFind found-item report form](./images/2.png) | ![CampusFind reference-code status lookup](./images/3.png) |
+![CampusFind natural-language item search](./images/1.png)
+
+### Search results
+
+![CampusFind matching found-item reports](./images/4.png)
+
+### Report a found item
+
+![CampusFind found-item report form](./images/2.png)
+
+### Check report status
+
+![CampusFind reference-code status lookup](./images/3.png)
 
 ## How the layers work
 
