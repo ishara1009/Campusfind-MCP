@@ -2,6 +2,16 @@
 
 CampusFind is a local full-stack campus lost-and-found demo. Students can search available items, report a found item, and check a report's status. It is designed as a beginner-friendly AI engineering portfolio project that demonstrates the Model Context Protocol (MCP) without letting an AI model query the database directly.
 
+## Application screenshots
+
+| Find an item | Search results |
+| --- | --- |
+| ![CampusFind natural-language item search](./images/1.png) | ![CampusFind matching found-item reports](./images/4.png) |
+
+| Report a found item | Check report status |
+| --- | --- |
+| ![CampusFind found-item report form](./images/2.png) | ![CampusFind reference-code status lookup](./images/3.png) |
+
 ## How the layers work
 
 ```text
