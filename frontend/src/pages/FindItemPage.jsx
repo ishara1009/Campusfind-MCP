@@ -47,26 +47,31 @@ export default function FindItemPage() {
   }
 
   return (
-    <>
-      <section className="hero">
-        <div className="hero-copy">
-          <p className="eyebrow">Campus lost &amp; found</p>
-          <h1>Let&apos;s get your things back to you.</h1>
-          <p>Search reports from around campus using a sentence or precise filters.</p>
-        </div>
-        <div className="hero-art" aria-hidden="true">
-          <span className="search-ring" />
-          <span className="spark spark-one">✦</span>
-          <span className="spark spark-two">✦</span>
+    <div className="find-page">
+      <section className="find-hero">
+        <div className="find-hero-inner">
+          <div className="hero-copy">
+            <p className="eyebrow">Campus lost &amp; found</p>
+            <h1>Lost something? Start here.</h1>
+            <p>Search verified campus reports in seconds, or report an item you found.</p>
+          </div>
+          <div className="hero-promise" aria-label="CampusFind highlights">
+            <span><strong>01</strong> Search reports</span>
+            <span><strong>02</strong> Match the details</span>
+            <span><strong>03</strong> Track by reference</span>
+          </div>
         </div>
       </section>
 
-      <section className="content-section search-panel" aria-labelledby="search-title">
+      <section className="search-panel search-card" aria-labelledby="search-title">
         <div className="section-heading">
-          <div><p className="eyebrow">Search reports</p><h2 id="search-title">What are you looking for?</h2></div>
+          <div>
+            <p className="eyebrow">Search reports</p>
+            <h2 id="search-title">What are you looking for?</h2>
+          </div>
           <div className="mode-switch" aria-label="Search type">
-            <button type="button" className={mode === "natural" ? "selected" : ""} onClick={() => setMode("natural")}>Describe it</button>
-            <button type="button" className={mode === "manual" ? "selected" : ""} onClick={() => setMode("manual")}>Use filters</button>
+            <button type="button" aria-pressed={mode === "natural"} className={mode === "natural" ? "selected" : ""} onClick={() => setMode("natural")}>Describe it</button>
+            <button type="button" aria-pressed={mode === "manual"} className={mode === "manual" ? "selected" : ""} onClick={() => setMode("manual")}>Use filters</button>
           </div>
         </div>
 
@@ -81,7 +86,7 @@ export default function FindItemPage() {
               <p className="field-hint">English, Sinhala, and mixed phrases are supported when AI search is configured.</p>
             </div>
           ) : (
-            <div className="form-grid">
+            <div className="form-grid search-form-grid">
               <label>Item name<input name="item_name" value={filters.item_name} onChange={updateFilter} placeholder="Earbuds case" /></label>
               <label>Category<input name="category" value={filters.category} onChange={updateFilter} placeholder="Electronics" /></label>
               <label>Color<input name="color" value={filters.color} onChange={updateFilter} placeholder="Black" /></label>
@@ -96,11 +101,11 @@ export default function FindItemPage() {
       </section>
 
       {hasSearched && (
-        <section className="content-section results" aria-live="polite">
+        <section className="content-section results results-section" aria-live="polite">
           <div className="section-heading"><div><p className="eyebrow">Results</p><h2>{items.length} matching {items.length === 1 ? "report" : "reports"}</h2></div></div>
           {items.length ? <div className="card-grid">{items.map((item) => <ItemCard key={item.id} item={item} />)}</div> : <div className="empty-state"><h3>No matching items yet</h3><p>Try a broader item name or fewer filters.</p></div>}
         </section>
       )}
-    </>
+    </div>
   );
 }
